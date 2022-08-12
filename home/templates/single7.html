@@ -1,0 +1,106 @@
+
+{% extends 'base2.html' %}
+{% block body %}
+{% load static %}
+
+    
+	
+	
+										
+	
+									
+	<!--single-page-->
+	<div class="single-page main-grid-border">
+		<div class="container">
+			<ol class="breadcrumb" style="margin-bottom: 5px;">
+				<li><a href="/">Home</a></li>
+				<li><a href="{% url 'products:product_list' %}">All Ads</a></li>
+				<li class="active">Pets</li>
+			</ol>
+			<div class="product-desc">
+				<div class="col-md-7 product-view">
+					<h2>Harolds pet germany shepherd male dog</h2>
+					<p> <i class="glyphicon glyphicon-map-marker"></i>&nbsp;
+					<a href="#">Nairobi</a>| Added at Aug.31, 2021, 13:14 p.m.</p>
+					<div class="flexslider">
+						<ul class="slides">
+                            
+                            
+                                
+                           
+						</ul>
+					</div>
+					<!-- FlexSlider -->
+					  <script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+					<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen" />
+
+						<script>
+					// Can also be used with $(document).ready()
+					$(window).load(function() {
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						controlNav: "thumbnails"
+					  });
+					});
+					</script>
+					<!-- //FlexSlider -->
+					<div class="product-details">
+					 <img src="{% static 'images/cat6.png' %}" alt="dog"/>
+					      
+						<h4>Brand : Harold pets</h4>
+						<h4>Views : <strong>150</strong></h4>
+						<p><strong>Summary</strong>&nbsp;An adult germany locally trained shepherd dog for sell </p>
+					
+					</div>
+				</div>
+				<div class="col-md-5 product-details-grid">
+					<div class="item-price">
+						<div class="product-price">
+							<p class="p-price">Price</p>
+							<h3 class="rate">Ksh.52,000</h3>
+							<div class="clearfix"></div>
+						</div>
+						<div class="condition">
+							<p class="p-price">Condition</p>
+							<h4>Not applicable</h4>
+							<div class="clearfix"></div>
+						</div>
+						<div class="itemtype">
+							<p class="p-price">Item Type</p>
+							<h4>Brand:&nbsp;Harold pets</h4>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="interested text-center">
+						<h4>Interested in this Ad?<small> Contact the Seller!</small></h4>
+				<p><i class="glyphicon glyphicon-earphone"></i>&nbsp;+254 766290811</p>
+					</div>
+						<div class="tips">
+						<h4>Safety Tips for Buyers</h4>
+							<ol>
+								<li>Do not pay money in advance.</li>
+								<li>Confirm that the product you want is still avaible before embarking to meet the seller.</li>
+								<li>Meet in an open space where people can watch you.</li>
+								<li>Do thorough assesment that the seller is true owner of the item.</li>
+								<li>Inspect product thoroughly to see that it matched with the picture and description or for damaged parts.</li>
+								<li>If possible ask for reciept of payment or an other document to gain ownership of the item.</li>
+								<li>Always red flag hurrried transactions.</li>
+								<li>If possible have one or more witness(es) while making transactions.</li>
+								<li>Report any fraud case(es) using any of our contact details provided below.</li>
+							</ol>
+						</div>
+				</div>
+			<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+										
+										
+									
+
+											
+
+
+
+
+{%  endblock %}

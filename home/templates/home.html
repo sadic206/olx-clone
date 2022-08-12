@@ -1,0 +1,349 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	{% load static %}
+
+<body>
+		<!-- content-starts-here -->
+		<div class="content">
+			<div class="categories">
+				<div class="container">
+					
+					{% for category in all_category %}
+												
+					<div class="col-md-2 focus-grid">
+					<a href="{% url 'products:product_list_category' category.slug  %}">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><!-- <i class="fa fa-car"></i> -->
+									
+									</div>
+									<h4 class="clrchg">{{category}}</h4>
+									
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- end-->
+					  
+                           
+
+					{% endfor %}
+
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<h4 style="text-align: center"><a href="/products">View All</a></h4>
+			<div class="trending-ads">
+				<div class="container">
+				<!-- slider -->
+				
+				<div class="trend-ads">
+					<h2>Trending Ads</h2>
+					
+					
+							<ul id="flexiselDemo3">
+								
+								<ul>
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'home:single1' %}">
+									<img src="{% static 'images/b1.jpg' %}" alt="wall-art"/>
+											<span class="price">KES.2,450</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Hand made pu leather wall art</h5>
+											<span>1 hour ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'home:single2' %}">
+									<img src="{% static 'images/bk1.jpg' %}" alt="moto_bike"/>
+											<span class="price">KES.222,450</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Modified enginge leisure motorbike</h5>
+											<span>4 hours ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'home:single3' %}">
+									<img src="{% static 'images/c13.jpg' %}" alt="mazda"/>
+											<span class="price">KES.652,000</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Japanese used honda hatchback car parked at kra port</h5>
+											<span>10 hours ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'home:single4' %}">
+									<img src="{% static 'images/cat5.png' %}" alt="dinning_table"/>
+											<span class="price">KES.22,450</span>
+										</a> 
+										<div class="ad-info">
+					<h5>A mahagon, high quality dinning chairs 6 pieces for sale </h5>
+											<span>12 hours ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									
+								
+								
+								
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'home:single5' %}">
+									<img src="{% static 'images/cat1.png' %}" alt="wall-art"/>
+											<span class="price">KES.12,450</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Iphone 6 up for grab , used but new looking.</h5>
+											<span>4 days ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'home:single6' %}">
+									<img src="{% static 'images/1.jpg' %}" alt="sam_phone"/>
+											<span class="price">KES.12,799</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Samsung s6 2gbram+8gb rom,6.0", 3200Mah battery, 3G android smartphone</h5>
+											<span>1 hour ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'home:single7' %}">
+									<img src="{% static 'images/cat6.png' %}" alt="dog"/>
+											<span class="price">KES.52,000</span>
+										</a> 
+										<div class="ad-info">
+											<h5>An adult germany loaclly trained shepherd dog for sell</h5>
+											<span>3 days ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'home:single8' %}">
+									<img src="{% static 'images/cat8.png' %}" alt="shirt_and_trouser"/>
+											<span class="price">KES.2,850</span>
+										</a> 
+										<div class="ad-info">
+											<h5>One pair shirt and trouser ex uk size 32 direct from package</h5>
+											<span>1 week ago</span>
+										
+										</div>
+									
+									</div>
+									</ul>
+									
+									<ul>
+									
+									
+								
+							
+								
+									<div class="col-md-3 biseller-column">
+									<a href="{% url 'home:single9' %}">
+									<img src="{% static 'images/e5.jpg' %}" alt="comp"/>
+											<span class="price">KES.12,799</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Complete dual core desktop computer from uk good as new, 4gb ram,500gb hard disk,17 inch monitor running on windows</h5>
+											<span>2 days ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'home:single10' %}">
+									<img src="{% static 'images/e7.jpg' %}" alt="cam"/>
+											<span class="price">KES.23,000</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Mordern digital camera with auto zoom and inmotion picture capture function.</h5>
+											<span>3 hours ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'home:single11' %}">
+									<img src="{% static 'images/e8.jpg' %}" alt="headset"/>
+											<span class="price">KES.2,000</span>
+										</a> 
+										<div class="ad-info">
+											<h5>High quality bass wireless headset lasting for 8 hours of nonstop usage with bluetooth and sdcard support</h5>
+											<span>6 days ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'home:single12' %}">
+									<img src="{% static 'images/e11.jpg' %}" alt="flash"/>
+											<span class="price">KES.1,300</span>
+										</a> 
+										<div class="ad-info">
+											<h5>8gb usb flash disk new!</h5>
+											<span>12 hours ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									
+									
+								
+				
+								
+									<div class="col-md-3 biseller-column">
+										<a href="{% url 'home:single13' %}">
+									<img src="{% static 'images/r12.jpg' %}" alt="apart"/>
+											<span class="price">KES.18,000</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Office space to rent in killimani area opposite to high mall plaza</h5>
+											<span>1 day ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									<div class="col-md-3 biseller-column">
+									<a href="{% url 'home:single14' %}">
+									<img src="{% static 'images/e13.jpg' %}" alt="printer"/>
+											<span class="price">KES.7,000</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Ink jet epison printer three in one function to print,scan and copy</h5>
+											<span>4 days ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									<div class="col-md-3 biseller-column">
+									<a href="{% url 'home:single15' %}">
+									<img src="{% static 'images/f3.jpg' %}" alt="joy"/>
+											<span class="price">KES.8,699</span>
+										</a> 
+										<div class="ad-info">
+											<h5>infinix joy 8, used long lasting battery</h5>
+											<span>3 hours ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+									<div class="col-md-3 biseller-column">
+									<a href="{% url 'home:single16' %}">
+									<img src="{% static 'images/fa3.jpg' %}" alt="l_jean"/>
+											<span class="price">KES.1,800</span>
+										</a> 
+										<div class="ad-info">
+											<h5>First class ladies jean size 34</h5>
+											<span>30 mins ago</span>
+										
+										</div>
+									
+									</div>
+									
+									
+										
+									<div class="col-md-3 biseller-column">
+				                 <a href="{% url 'home:single17' %}">
+									<img src="{% static 'images/k9.jpg' %}" alt="kids_pool"/>
+											<span class="price">KES.6,800</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Inflatable duck figure kids swimming pool</h5>
+											<span>3 weeks ago</span>
+										
+										</div>
+									
+									</div>
+			                           
+									</ul>
+									</ul>
+						       </div>
+						       </div>
+						          
+						
+						          
+						          
+						          
+						          
+						<script type="text/javascript">
+						 $(window).load(function() {
+							$("#flexiselDemo3").flexisel({
+								visibleItems:1,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 5000,    		
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: { 
+									portrait: { 
+										changePoint:480,
+										visibleItems:1
+									}, 
+									landscape: { 
+										changePoint:640,
+										visibleItems:1
+									},
+									tablet: { 
+										changePoint:768,
+										visibleItems:1
+									}
+								}
+							});
+							
+						});
+					   </script>
+					   <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+					 
+				  
+			    
+			<!-- product list -->
+			
+			<!-- //slider --> 				
+			</div>
+			
+</body>
+
+{% endblock body %}

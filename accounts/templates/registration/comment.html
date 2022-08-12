@@ -1,0 +1,40 @@
+{% extends 'base2.html' %}
+{% load bootstrap4 %}
+{% block body %}
+ 
+
+	 <section>
+			<div id="page-wrapper" class="post-wrapper">
+				<div class="graphs">
+					<div class="post-form">
+						<div class="post-form-top">
+							<h1>Post an ad</h1>
+						</div>
+						<div class="post">
+
+                        <form method="post" class="form">
+                            {% csrf_token %}
+                            {% bootstrap_form form %}
+                            {% buttons %}
+                                <input type="submit" class="btn btn-primary" value="Post ad">
+                            {% endbuttons %}
+                        </form>
+
+						</div>
+						
+						
+					</div>
+					
+					
+				</div>
+			
+			</div>
+			
+		<!--footer section start-->					
+			<footer class="diff">					
+			<p> © 2021 Tobole. All Rights Reserved | Design by  <a href="https://swadick.pythonanywhere.com/">Sadic</a></p>
+			</footer>
+        <!--footer section end-->
+	</section>
+
+    {% endblock body %}

@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: sadricw@gmail.com
+Date: Tue, 24 Aug 2021 15:05:05 -0000
+Message-ID: <162981750533.4451.10357234782544830477@sadic-latituded630>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/Ng/arwcwh-e6ec5b8127bd22389e81681fa02ad6af/
+
+Your username, in case you’ve forgotten: sadic
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------
